@@ -1,0 +1,290 @@
+\documentclass[aspectratio=169,11pt]{beamer}
+\usetheme{Madrid}
+\usecolortheme{default}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{booktabs,tabularx,array}
+\definecolor{iutblue}{RGB}{20,57,92}
+\definecolor{iutteal}{RGB}{0,112,122}
+\setbeamercolor{structure}{fg=iutblue}
+\setbeamercolor{block title}{bg=iutblue,fg=white}
+\setbeamercolor{block title example}{bg=iutteal,fg=white}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{caption}[numbered]
+\setbeamersize{text margin left=8mm,text margin right=8mm}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcommand{\source}[1]{\par\vfill{\tiny\color{gray}Source: Criterion 8 SAR, #1.}}
+\newcommand{\coursehead}[2]{\small\textbf{Delivery:} #1\par\textbf{Assessment:} #2\par\medskip}
+\NewDocumentEnvironment{cotable}{+b}{\footnotesize\renewcommand{\arraystretch}{1.22}\begin{tabularx}{\textwidth}{@{}p{7mm}Y p{27mm}p{20mm}@{}}\toprule\textbf{CO}&\textbf{Expected student work (summarized)}&\textbf{Mapped POs}&\textbf{Domains}\\\midrule #1\bottomrule\end{tabularx}}{}
+\title[Criterion 8: POs and COs]{Criterion 8: Program Outcomes and Assessment}
+\subtitle{Sections 8.1 and 8.2: Outcome Statements, Alignment, and Course Design}
+\author[Department of CSE]{Department of Computer Science and Engineering}
+\institute[IUT]{Islamic University of Technology}
+\date{Source document: 24 June 2026}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+  \vspace{-5mm}
+  \begin{center}\scriptsize Based on \texttt{[2026-06-24] v2 SAR-CSE-criterion-8.pdf}, printed pp. 125--131.\end{center}
+\end{frame}
+
+\begin{frame}{What these two sections establish}
+\begin{columns}[T]
+\column{0.48\textwidth}
+\begin{block}{8.1: Define the graduate outcomes}
+\begin{itemize}
+\item State the twelve Program Outcomes (POs) expected at graduation.
+\item Map each PO to a Program Educational Objective (PEO).
+\item Explain why each relationship supports the program's objectives.
+\end{itemize}
+\end{block}
+\column{0.48\textwidth}
+\begin{block}{8.2: Translate outcomes into course work}
+\begin{itemize}
+\item Develop and review measurable Course Outcomes (COs).
+\item Specify delivery, learning domains, and assessment tools.
+\item Link course-level learning to the relevant POs.
+\end{itemize}
+\end{block}
+\end{columns}
+\begin{exampleblock}{The alignment to explain}
+Program objectives $\longleftarrow$ graduate outcomes $\longleftarrow$ course outcomes $\longleftarrow$ learning activities and assessment evidence.
+\end{exampleblock}
+\source{Sections 8.1--8.2, pp. 125--131}
+\end{frame}
+
+\section{8.1 Program Outcomes and PEO Alignment}
+\begin{frame}{8.1: Technical capabilities expected at graduation}
+\small
+\renewcommand{\arraystretch}{1.35}
+\begin{tabularx}{\textwidth}{@{}p{10mm}p{37mm}Y@{}}
+\toprule\textbf{PO}&\textbf{Graduate attribute}&\textbf{What graduates should be able to do (summary)}\\\midrule
+PO1&Engineering knowledge&Apply mathematics, science, engineering fundamentals, and specialist knowledge to complex engineering problems.\\
+PO2&Problem analysis&Identify, formulate, research, and analyze complex problems to reach substantiated conclusions.\\
+PO3&Design/development of solutions&Design solutions meeting specified needs while considering health, safety, culture, society, and environment.\\
+PO4&Investigation&Design experiments, analyze data, and synthesize research-based evidence into valid conclusions.\\
+PO5&Modern tool usage&Select, create, and apply engineering and IT tools, including modeling, with awareness of their limitations.\\
+\bottomrule
+\end{tabularx}
+\source{Table 8.1, p. 125; statements condensed for presentation}
+\end{frame}
+
+\begin{frame}{8.1: Professional capabilities expected at graduation}
+\footnotesize
+\renewcommand{\arraystretch}{1.18}
+\begin{tabularx}{\textwidth}{@{}p{10mm}p{37mm}Y@{}}
+\toprule\textbf{PO}&\textbf{Graduate attribute}&\textbf{What graduates should be able to do (summary)}\\\midrule
+PO6&The engineer and society&Assess societal, health, safety, legal, and cultural issues and professional responsibilities.\\
+PO7&Environment and sustainability&Evaluate the societal and environmental impact and sustainability of engineering work.\\
+PO8&Ethics&Apply ethical principles and uphold professional responsibilities and norms.\\
+PO9&Individual work and teamwork&Work effectively independently and as a member or leader of diverse teams.\\
+PO10&Communication&Write reports and design documents; present effectively; give and receive clear instructions.\\
+PO11&Project management and finance&Apply engineering management and economic decision-making in individual and team projects.\\
+PO12&Life-long learning&Recognize the need for and undertake independent, continuing learning as technology changes.\\
+\bottomrule
+\end{tabularx}
+\source{Table 8.1, pp. 125--126; statements condensed for presentation}
+\end{frame}
+
+\begin{frame}{8.1: How the twelve POs support the four PEOs}
+\small
+\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\textwidth}{@{}p{14mm}p{28mm}Y@{}}
+\toprule\textbf{PEO}&\textbf{Mapped POs}&\textbf{Reason for the alignment}\\\midrule
+PEO1&PO1--PO5&Computing knowledge, analysis, design, research, and modern tools support engineering solution development.\\
+PEO2&PO6--PO8&Societal responsibility, sustainability, and ethics support responsible professional practice.\\
+PEO3&PO12&Independent learning supports continuing professional development.\\
+PEO4&PO9--PO11&Teamwork, communication, and management support collaboration in diverse and multidisciplinary settings.\\
+\bottomrule
+\end{tabularx}
+\begin{block}{What the mapping documents}
+Every PO has a stated connection to a PEO; the report supplies a justification for each connection. The PO approval document is referenced in Section G.1.
+\end{block}
+\source{Table 8.2 and mapping justifications, pp. 126--127; PEO descriptions above summarize the rationale, not official PEO wording}
+\end{frame}
+
+\section{8.2 Course Outcomes}
+\begin{frame}{8.2: How course outcomes are developed and reviewed}
+\small
+\begin{enumerate}
+\item \textbf{Instructors draft the course package:} outline, contents, assessment plan, and CO--PO mappings using the approved OBE curriculum and syllabus.
+\item \textbf{Course coordinators harmonize sections:} align contents, assessment, and mappings across multiple sections of a course.
+\item \textbf{The Departmental Committee reviews:} examine proposed materials, previous attainment, CQI findings, and instructor, student, alumni, and employer feedback.
+\item \textbf{The Syllabus Committee examines curricular changes:} check alignment with the mission, POs, and PEOs; significant changes follow institutional approval through the Academic Council.
+\item \textbf{The department finalizes the COs:} incorporate approved improvements into outcomes, outlines, and assessment strategies.
+\end{enumerate}
+\begin{exampleblock}{The recurring work}
+Use evidence and feedback from earlier offerings to improve the next course design.
+\end{exampleblock}
+\source{Section 8.2, p. 127}
+\end{frame}
+
+\begin{frame}{8.2.1: What is documented for each course outcome?}
+\begin{columns}[T]
+\column{0.49\textwidth}
+\begin{block}{The CO specification}
+\begin{itemize}
+\item A specific, measurable statement of expected knowledge, skills, or competence.
+\item One or more mapped POs.
+\item Learning-domain codes.
+\item Delivery methods and learning activities.
+\item Assessment tools that can demonstrate the outcome.
+\end{itemize}
+\end{block}
+\column{0.47\textwidth}
+\begin{exampleblock}{Example: AI theory, CO3}
+\textbf{Student work:} recommend solutions to real-life AI problems using existing techniques.\par\medskip
+\textbf{Alignment:} PO3 (design).\par
+\textbf{Domain:} C6.\par
+\textbf{Delivery:} lecture and demonstration.\par
+\textbf{Evidence:} mid-term and final examinations.
+\end{exampleblock}
+\end{columns}
+\medskip\scriptsize Domain families: C = cognitive; A = affective; P = psychomotor. Numeric codes on the following slides are reproduced from Table 8.3.
+\source{Section 8.2.1 and Table 8.3, pp. 127--130}
+\end{frame}
+
+\begin{frame}{HUM 4441: Engineering Ethics}
+\coursehead{Lecture, group discussion, and problem solving.}{Mid-term and final examinations.}
+\begin{cotable}
+CO1&Understand moral and ethical principles governing engineering practice and decisions.&PO6&C2\\
+CO2&Examine social and cultural implications, professional responsibility, and accountability.&PO8&C4\\
+CO3&Develop a framework for ethical analysis and engineering decision-making.&PO8&C3\\
+CO4&Analyze and apply ethical implications of data technologies, privacy, security, and ownership.&PO6&C4\\
+CO5&Understand how data-driven technologies create or perpetuate bias and discrimination.&PO6&C2\\
+\end{cotable}
+\source{Table 8.3, p. 128; CO descriptions summarized}
+\end{frame}
+
+\begin{frame}{CSE 4513: Software Engineering and OOD}
+\coursehead{Lecture and problem solving.}{Mid-term and final examinations.}
+\begin{cotable}
+CO1&Explain software development fundamentals and requirement engineering.&PO1, PO2&C2\\
+CO2&Apply design knowledge to model large software systems.&PO2&C3\\
+CO3&Use techniques and tools to release and maintain quality software.&PO1, PO2&C3\\
+\end{cotable}
+\begin{exampleblock}{Work to explain}
+Students move from understanding the development process to modeling systems and applying software release and maintenance practices.
+\end{exampleblock}
+\source{Table 8.3, p. 128; CO descriptions summarized}
+\end{frame}
+
+\begin{frame}{CSE 4711: Artificial Intelligence}
+\coursehead{Lecture and demonstration.}{Mid-term and final examinations.}
+\begin{cotable}
+CO1&Apply general AI techniques to common problem types.&PO1&C3\\
+CO2&Formulate problem scenarios as environments and agents, with justification.&PO2&C5\\
+CO3&Recommend solutions to real-life AI problems using existing techniques.&PO3&C6\\
+\end{cotable}
+\begin{exampleblock}{Work to explain}
+Apply AI knowledge $\longrightarrow$ formulate the problem $\longrightarrow$ propose a suitable solution.
+\end{exampleblock}
+\source{Table 8.3, p. 128; CO descriptions summarized}
+\end{frame}
+
+\begin{frame}{CSE 4712: Artificial Intelligence Lab}
+\coursehead{Group discussion, demonstration, and problem solving.}{Lab viva, lab tasks, and lab reports.}
+\begin{cotable}
+CO1&Implement and analyze algorithms for complex navigation and strategy problems.&PO5&C3, C4\\
+CO2&Formulate complex real-world scenarios as specific AI paradigms.&PO2&C5\\
+CO3&Design, test, and evaluate intelligent agents under uncertainty using modern tools and frameworks.&PO4&C6, P5\\
+CO4&Communicate analysis, design choices, and performance through structured technical reports.&PO10&P7, C5\\
+\end{cotable}
+\medskip\scriptsize The PO mappings here follow Table 8.3; Table 8.4 differs for CO1 and CO3 (see the review slide).
+\source{Table 8.3, pp. 128--129; CO descriptions summarized}
+\end{frame}
+
+\begin{frame}{CSE 4610: Design Project}
+\coursehead{Group discussion, demonstration, and project work.}{Presentation and project.}
+\begin{cotable}
+CO1&Identify research problems and implement innovative solutions with current technologies, tools, and algorithms.&PO1--PO5&C4\\
+CO2&Demonstrate teamwork, ethics, responsibility, and project management to deliver a software system within constraints.&PO8, PO9, PO11&C3, A4\\
+CO3&Design and evaluate computing solutions considering ethical, societal, and environmental implications.&PO6, PO7, PO8&C5, A3\\
+CO4&Communicate outcomes through a structured research report and formal presentation.&PO10&C3, A3\\
+CO5&Build a foundation for future research in the same or related domains.&PO12&C2, A2\\
+\end{cotable}
+\source{Table 8.3, p. 129; CO descriptions summarized}
+\end{frame}
+
+\begin{frame}{CSE 4700: Project/Thesis}
+\coursehead{Discussion, demonstration, problem solving, and report writing.}{Presentation and report.}
+\begin{cotable}
+CO1&Identify and formulate a significant research problem through literature review and analysis of existing solutions.&PO1, PO2, PO4&C4, A4\\
+CO2&Propose methodologies, models, or systems for the identified problem.&PO3&C6, A5, P5\\
+CO3&Conduct experiments, simulations, or data-driven investigations; evaluate solutions and interpret results.&PO4, PO5&C4, A4, P4\\
+CO5&Prepare a technical report and present findings for technical and non-technical audiences.&PO10&C5, P5, A7\\
+CO6&Work independently and collaboratively, apply project management, and pursue continuous learning.&PO9, PO11, PO12&C6, P5, A7\\
+\end{cotable}
+\medskip\scriptsize CO numbering follows the source: Table 8.3 does not list a CO4 for this course.
+\source{Table 8.3, pp. 129--130; CO descriptions summarized}
+\end{frame}
+
+\begin{frame}{CSE 4800: Project/Thesis}
+\coursehead{Discussion, demonstration, problem solving, and report writing.}{Presentation and report.}
+\begin{cotable}
+CO2&Propose methodologies, models, or systems for the identified problem.&PO3&C6, A5, P5\\
+CO3&Conduct experiments, simulations, or data-driven investigations; evaluate solutions and interpret results.&PO4, PO5&C4, A4, P4\\
+CO4&Demonstrate ethical responsibility and professionalism in research, considering society and the environment.&PO6, PO7, PO8&C6, P6\\
+CO5&Prepare a technical report and present findings for technical and non-technical audiences.&PO10&C5, P5, A7\\
+CO6&Work independently and collaboratively, apply project management, and pursue continuous learning.&PO9, PO11, PO12&C6, P5, A7\\
+\end{cotable}
+\medskip\scriptsize CO numbering follows the source: Table 8.3 does not list a CO1 for this course.
+\source{Table 8.3, p. 130; CO descriptions summarized}
+\end{frame}
+
+\begin{frame}{8.2.2: How the courses collectively contribute to POs}
+\footnotesize
+\renewcommand{\arraystretch}{1.1}
+\begin{tabularx}{\textwidth}{@{}p{48mm}Y@{}}
+\toprule\textbf{Course}&\textbf{PO coverage derived from the CO statements in Table 8.3}\\\midrule
+HUM 4441: Engineering Ethics&PO6, PO8\\
+CSE 4513: Software Engineering and OOD&PO1, PO2\\
+CSE 4711: Artificial Intelligence&PO1, PO2, PO3\\
+CSE 4712: Artificial Intelligence Lab&PO2, PO4, PO5, PO10\\
+CSE 4610: Design Project&PO1--PO12 (all twelve)\\
+CSE 4700: Project/Thesis&PO1, PO2, PO3, PO4, PO5, PO9, PO10, PO11, PO12\\
+CSE 4800: Project/Thesis&PO3, PO4, PO5, PO6, PO7, PO8, PO9, PO10, PO11, PO12\\
+\bottomrule
+\end{tabularx}
+\begin{exampleblock}{Why the distribution matters}
+Theory develops knowledge and analysis; laboratory work adds implementation and investigation; projects integrate technical and professional capabilities.
+\end{exampleblock}
+\source{Section 8.2.2 and Tables 8.3--8.4, pp. 128--131; coverage uses Table 8.3 where the tables differ}
+\end{frame}
+
+\begin{frame}{Source review: reconcile the CO--PO tables}
+\footnotesize
+Table 8.3 and Table 8.4 contain differences that should be checked before finalizing the SAR or presentation.
+\par\medskip\noindent
+\renewcommand{\arraystretch}{1.4}
+\begin{tabularx}{\textwidth}{@{}p{36mm}Y Y@{}}
+\toprule\textbf{Course / CO}&\textbf{Table 8.3: statements}&\textbf{Table 8.4: mapping matrix}\\\midrule
+CSE 4712 / CO1&PO5&PO4\\
+CSE 4712 / CO3&PO4&PO3\\
+CSE 4700 / CO5&PO10&PO6\\
+CSE 4800 / CO5&PO10&No PO marked\\
+\bottomrule
+\end{tabularx}
+\begin{block}{Treatment in this draft}
+Course slides and the coverage summary consistently use Table 8.3. Retain the original CO numbering and learning-domain codes pending confirmation against the approved course outlines.
+\end{block}
+\source{Table 8.3, pp. 128--130; Table 8.4, p. 131}
+\end{frame}
+
+\begin{frame}{What Sections 8.1 and 8.2 document}
+\begin{enumerate}
+\item \textbf{Graduate expectations:} twelve defined POs, with an approval reference.
+\item \textbf{Program alignment:} PO--PEO mappings and a rationale for every relationship.
+\item \textbf{Course design:} CO statements, learning domains, delivery methods, and assessment tools for seven selected core courses.
+\item \textbf{Review responsibilities:} instructor preparation, coordinator harmonization, departmental review, and formal approval of significant changes.
+\item \textbf{Traceability:} each course outcome connects student work to one or more graduate outcomes.
+\end{enumerate}
+\begin{exampleblock}{Presentation takeaway}
+These sections explain how the program defines its outcomes and organizes course work to support them.
+\end{exampleblock}
+\source{Sections 8.1--8.2, pp. 125--131}
+\end{frame}
+
+\end{document}
